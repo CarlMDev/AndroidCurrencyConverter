@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="_0_00">0.00</string>
+    <string name="target_currency_code_default">TRY</string>
+    <string name="base_currency_code_default">USD</string>
+    <string name="base_amount">0.00</string>
+    <string name="base_currency_code">Base Currency Code</string>
+    <string name="target_currency_code">Target Currency Code</string>
+</resources>

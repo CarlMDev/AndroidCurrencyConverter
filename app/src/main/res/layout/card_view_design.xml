@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/design_default_color_on_primary"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="8dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/llCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:id="@+id/tvBaseCurrencyCardLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Base Currency Spot"
+                        android:textColor="@color/design_default_color_primary_variant"/>
+
+                    <TextView
+                        android:id="@+id/tvBaseCurrencyAmountCardLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/design_default_color_primary_variant"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvToCardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TO"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_primary_variant"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:id="@+id/tvTargetCurrencyCardLaout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Target Currecy Spot"
+                        android:textColor="@color/design_default_color_primary_variant"/>
+
+                    <TextView
+                        android:id="@+id/tvTargetCurrencyAmountCardLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/design_default_color_primary_variant"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvDateCardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date goes here"
+                    android:padding="5sp"
+                    android:textColor="@color/design_default_color_primary_variant"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>

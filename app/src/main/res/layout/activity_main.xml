@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/money_portrait"
+    android:id="@+id/svMainScroll">
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FROM"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spBaseCurrencyDescriptions"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/base_currency_code"
+                android:focusableInTouchMode="false"
+                android:outlineSpotShadowColor="@color/design_default_color_primary"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:orientation="horizontal"
+            android:paddingBottom="10sp">
+
+            <TextView
+                android:id="@+id/tvBaseCurrencyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="@string/base_currency_code_default"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="60sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/etBaseCurrencyAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="60sp"
+                tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivSwitch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".40"
+                android:contentDescription="switch"
+                app:srcCompat="@drawable/ic_switch" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".60"
+                android:text="TO"
+                android:textAlignment="textStart"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spTargetCurrencyDescriptions"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/target_currency_code"
+                android:foregroundTint="@color/design_default_color_primary"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTargetCurrencyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="@string/target_currency_code_default"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/tvTargetCurrencyAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="60sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:text="@string/_0_00"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/design_default_color_primary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="201dp">
+
+            <ImageView
+                android:id="@+id/ivGo"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:contentDescription="Convert currencies"
+                app:srcCompat="@drawable/ic_go"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
